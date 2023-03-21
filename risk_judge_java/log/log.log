@@ -1,0 +1,44 @@
+2023-03-21 11:28:32.393  INFO 6264 --- [main] c.e.r.RiskJudgeJavaApplication           : Starting RiskJudgeJavaApplication using Java 1.8.0_331 on LAPTOP-QVFDFKC9 with PID 6264 (E:\risk-judge\risk_judge_java\target\classes started by 赵凯阳 in E:\risk-judge\risk_judge_java)
+2023-03-21 11:28:32.402 DEBUG 6264 --- [main] c.e.r.RiskJudgeJavaApplication           : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-21 11:28:32.404  INFO 6264 --- [main] c.e.r.RiskJudgeJavaApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-03-21 11:28:33.237  WARN 6264 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.risk_judge_java]' package. Please check your configuration.
+2023-03-21 11:28:33.612  INFO 6264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-03-21 11:28:33.622  INFO 6264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-21 11:28:33.623  INFO 6264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-21 11:28:33.781  INFO 6264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-21 11:28:33.781  INFO 6264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1304 ms
+2023-03-21 11:28:34.192  WARN 6264 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-03-21 11:28:34.195  INFO 6264 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-21 11:28:34.205  INFO 6264 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-21 11:28:34.222 ERROR 6264 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-03-21 11:34:01.728  INFO 24064 --- [main] c.e.r.RiskJudgeJavaApplication           : Starting RiskJudgeJavaApplication using Java 1.8.0_331 on LAPTOP-QVFDFKC9 with PID 24064 (E:\risk-judge\risk_judge_java\target\classes started by 赵凯阳 in E:\risk-judge\risk_judge_java)
+2023-03-21 11:34:01.729 DEBUG 24064 --- [main] c.e.r.RiskJudgeJavaApplication           : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-21 11:34:01.730  INFO 24064 --- [main] c.e.r.RiskJudgeJavaApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-03-21 11:34:02.137  WARN 24064 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.risk_judge_java]' package. Please check your configuration.
+2023-03-21 11:34:02.357  INFO 24064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-03-21 11:34:02.364  INFO 24064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-21 11:34:02.364  INFO 24064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-21 11:34:02.464  INFO 24064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-21 11:34:02.464  INFO 24064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 705 ms
+2023-03-21 11:34:02.783  INFO 24064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-21 11:34:02.790  INFO 24064 --- [main] c.e.r.RiskJudgeJavaApplication           : Started RiskJudgeJavaApplication in 1.346 seconds (JVM running for 2.11)
