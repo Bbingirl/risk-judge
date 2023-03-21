@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>risk_judeg_java</artifactId>
+    <artifactId>risk_judge_java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>risk_judeg_java</name>
-    <description>risk_judeg_java</description>
+    <name>risk_judge_java</name>
+    <description>risk_judge_java</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

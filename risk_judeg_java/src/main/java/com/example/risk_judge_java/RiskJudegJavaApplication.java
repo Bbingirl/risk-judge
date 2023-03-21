@@ -1,13 +1,13 @@
-package com.example.risk_judeg_java;
+package com.example.risk_judge_java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RiskJudegJavaApplication {
+public class RiskJudgeJavaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RiskJudegJavaApplication.class, args);
+        SpringApplication.run(RiskJudgeJavaApplication.class, args);
     }
 
 }
